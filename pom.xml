@@ -40,6 +40,8 @@
                     <checkedMode>true</checkedMode>
                     <minify>${js.minify}</minify>
                     <pubCommand>build</pubCommand>
+                    <testFailureIgnore>false</testFailureIgnore> <!-- https://issues.jenkins-ci.org/browse/JENKINS-959 -->
+                    <failIfNoTests>true</failIfNoTests>
                 </configuration>
                 <executions>
                     <execution>
